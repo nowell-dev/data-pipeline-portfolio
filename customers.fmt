@@ -1,0 +1,9 @@
+13.0
+7
+1       SQLCHAR       0       2000       ","     1     "customer_id"   ""
+2       SQLCHAR       0       2000       ","     2     "full_name"     ""
+3       SQLCHAR       0       2000       ","     3     "email"         ""
+4       SQLCHAR       0       2000       ","     4     "phone"         ""
+5       SQLCHAR       0       2000       ","     5     "address"       ""
+6       SQLCHAR       0       2000       ","     6     "city"          ""
+7       SQLCHAR       0       2000       "\r\n"   7     "province"      ""

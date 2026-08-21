@@ -1,0 +1,5 @@
+customer_id,full_name,email,phone,address,city,province
+1001,Juan Dela Cruz (update 2),juan.dela.cruz@email.com (update 2),0917-1234569,123 Rizal Street,Makati,Metro Manila (update 2)
+1002,Maria Santos (update 2),maria.santos@email.com (update 2),0918-1234569,45 Mabini Street,Quezon City,Metro Manila (update 2)
+1003,Pedro Reyes,pedro.reyes@email.com,0919-1234567,78 Colon Street,Cebu City,Cebu
+1004,Ana Torres,ana.torres@email.com,0920-1234567,88 Bonifacio Street,Davao City,Davao del Sur
