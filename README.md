@@ -57,12 +57,12 @@ Each dimension table uses:
 
 1. [01 Database.sql](01%20Database.sql) - creates the `CustomerETL` database
 2. [02 Tables.sql](02%20Tables.sql) - creates the dimension tables and batch log table
-3. [03 StoredProcedure-CreateLogEntry.sql](03%20StoredProcedure-CreateLogEntry.sql) - inserts a new load batch record
-4. [04 StoredProcedure-Parent-Start_LoadBatch.sql](04%20StoredProcedure-Parent-Start_LoadBatch.sql) - calls the child stored procedures that load data into their respective tables
-5. [05 StoredProcedure-Child-Load_DimCustomerFullName.sql](05%20StoredProcedure-Child-Load_DimCustomerFullName.sql) - loads full name history
-6. [05 StoredProcedure-Child-Load_DimCustomerEmail.sql](05%20StoredProcedure-Child-Load_DimCustomerEmail.sql) - loads email history
-7. [05 StoredProcedure-Child-Load_DimCustomerPhone.sql](05%20StoredProcedure-Child-Load_DimCustomerPhone.sql) - loads phone history
-8. [05 StoredProcedure-Child-Load_DimCustomerAddress.sql](05%20StoredProcedure-Child-Load_DimCustomerAddress.sql) - loads address history
+3. [03 StoredProcedure-CreateLoadBatchEntry.sql](03%20StoredProcedure-CreateLoadBatchEntry.sql) - inserts a new load batch record
+4. [04 StoredProcedure-Child-Load_DimCustomerAddress.sql](04%20StoredProcedure-Child-Load_DimCustomerAddress.sql) - loads address history
+5. [04 StoredProcedure-Child-Load_DimCustomerEmail.sql](04%20StoredProcedure-Child-Load_DimCustomerEmail.sql) - loads email history
+6. [04 StoredProcedure-Child-Load_DimCustomerFullName.sql](04%20StoredProcedure-Child-Load_DimCustomerFullName.sql) - loads full name history
+7. [04 StoredProcedure-Child-Load_DimCustomerPhone.sql](04%20StoredProcedure-Child-Load_DimCustomerPhone.sql) - loads phone history
+8. [05 StoredProcedure-Parent-Start_LoadBatch.sql](05%20StoredProcedure-Parent-Start_LoadBatch.sql) - calls the child stored procedures that load data into their respective tables
 9. [99 Testing.sql](99%20Testing.sql) - contains execution scenarios for normal and failure testing
 10. [99 Monitoring.sql](99%20Monitoring.sql) - queries the current state of the batch log and dimension tables
 
@@ -72,12 +72,12 @@ Run the scripts in this order:
 
 1. [01 Database.sql](01%20Database.sql)
 2. [02 Tables.sql](02%20Tables.sql)
-3. [03 StoredProcedure-CreateLogEntry.sql](03%20StoredProcedure-CreateLogEntry.sql)
-4. [04 StoredProcedure-Parent-Start_LoadBatch.sql](04%20StoredProcedure-Parent-Start_LoadBatch.sql)
-5. [05 StoredProcedure-Child-Load_DimCustomerFullName.sql](05&20StoredProcedure-Child-Load_DimCustomerFullName.sql)
-6. [05 StoredProcedure-Child-Load_DimCustomerEmail.sql](05&20StoredProcedure-Child-Load_DimCustomerEmail.sql)
-7. [05 StoredProcedure-Child-Load_DimCustomerPhone.sql](05&20StoredProcedure-Child-Load_DimCustomerPhone.sql)
-8. [05 StoredProcedure-Child-Load_DimCustomerAddress.sql](05&20StoredProcedure-Child-Load_DimCustomerAddress.sql)
+3. [03 StoredProcedure-CreateLoadBatchEntry.sql](03%20StoredProcedure-CreateLoadBatchEntry.sql)
+4. [04 StoredProcedure-Child-Load_DimCustomerAddress.sql](04%20StoredProcedure-Child-Load_DimCustomerAddress.sql)
+5. [04 StoredProcedure-Child-Load_DimCustomerEmail.sql](04%20StoredProcedure-Child-Load_DimCustomerEmail.sql)
+6. [04 StoredProcedure-Child-Load_DimCustomerFullName.sql](04%20StoredProcedure-Child-Load_DimCustomerFullName.sql)
+7. [04 StoredProcedure-Child-Load_DimCustomerPhone.sql](04%20StoredProcedure-Child-Load_DimCustomerPhone.sql)
+8. [05 StoredProcedure-Parent-Start_LoadBatch.sql](05%20StoredProcedure-Parent-Start_LoadBatch.sql)
 9. [99 Testing.sql](99%20Testing.sql) - Execute a batch using the test script
 10. [99 Monitoring.sql](99%20Monitoring.sql) - Monitor the status
 
