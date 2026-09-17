@@ -32,7 +32,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE OR ALTER PROCEDURE dbo.[Load_DimCustomerAddress]
+CREATE OR ALTER PROCEDURE dbo.[Load_DimCustomerEmail]
 	@LoadBatchId INT = NULL,
 	@fileToLoad NVARCHAR(250)
 AS
